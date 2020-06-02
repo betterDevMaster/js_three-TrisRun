@@ -1,0 +1,22 @@
+{
+  "name": "Trisrun",
+  "description": "A runner game with threejs",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "InitialCrow"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "three.js": "threejs#*",
+    "cannon.js": "~0.6.2"
+  }
+}

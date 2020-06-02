@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="A run game with threeJs by InitialCrow">
+	<title>Trisrun</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<audio id ="audio" autobuffer autoplay loop controls>
+		
+		<source src="/assets/nitro.mp3">
+		
+	</audio>
+	<!-- =================libs========================== -->
+	<script src="bower_components/three.js/build/three.min.js"></script>
+	<script src="bower_components/cannon.js/build/cannon.js"></script>
+	<script src="js/lib/stats.min.js"></script>
+	<script src="js/lib/OrbitControls.js"></script>
+	<script src="js/lib/threex.keyboardstate.js"></script>
+
+
+
+	<!-- ==================class of app ================ -->
+	<script src="js/class/Obst.js"></script>
+	<script src="js/class/Road.js"></script>
+	<script src="js/class/ToolBox.js"></script>
+
+	<!-- ===================app====================== -->
+	<script src="js/function.js"></script>
+	<script src="js/trisRun.js"></script>
+	<script src="js/webgl.js"></script>
+	<script src="js/world.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/player.js"></script>
+	<script src="js/gameEngine.js"></script>
+	
+	<script>
+	trisrun.init().start();
+	</script>
+</body>
+</html>

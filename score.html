@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>loose</title>
+	<link rel="stylesheet" href="lose.css">
+</head>
+<body>
+	<h1>TrisRun ver 0.0.8</h1>
+	<h2>Scores Tabs :</h2>
+	<div id="scortab">
+		
+	</div>
+	<button id="clear">clearTab</button>
+	<a href="index.html"> Go to menu</a>
+
+	<script>
+	var elem = document.getElementById('scortab')
+	var elemClear = document.getElementById('clear')
+	var scortab = localStorage.getItem('Scores')
+
+	if (scortab != null && scortab!=undefined ){
+		var re = /[|]/
+		var rexp = new RegExp(re, "g")
+		var string = scortab;
+		var newString = string.replace(rexp, "<br>")
+		elem.innerHTML = "<p>"+newString+"</p>";
+
+	}
+	else{
+		elem.innerHTML = "<p> No play !!!! No score !!!</p>";
+	}
+	
+	elemClear.addEventListener('click', onclick)
+
+	function onclick(){
+		localStorage.clear();
+		location.reload();
+
+	}
+
+
+	</script>
+	
+</body>
+</html>

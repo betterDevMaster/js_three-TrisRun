@@ -1,0 +1,103 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#ui-box1{
+	position: absolute;
+	z-index: 22;
+	top : 0;
+	right : 0;
+
+}
+#ui-box2{
+	position: absolute;
+	z-index: 22;
+	top : 0;
+	right : 0;
+
+}
+#ui-box3{
+	position: absolute;
+	z-index: 22;
+	top : 0;
+	right : 0;
+
+}
+.tool{
+	border: 2px blue transparent;
+	margin-top: 5px;
+	border: transparent;
+	margin-right: 20px;
+}
+
+#score{
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	font-family: verdana;
+}
+.life{
+	margin-right: 5px;
+}
+.blind{
+	visibility: hidden;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	font-family: verdana;
+	animation-name : blind;
+	animation-duration : 0.5s;
+	animation-iteration-count : 4;
+}
+.border{
+	border: 2px blue solid;
+	margin-right: 20px;
+	margin-top: 5px;
+	animation-name : border;
+	animation-duration : 0.5s;
+	animation-iteration-count : 4;
+}
+.help{
+	/*visibility: hidden;*/
+	text-align: center;
+	font-size: 18px;
+	color: black;
+	font-family: verdana;
+	
+}
+#audio{
+	position: absolute;
+	top : 250px;
+}
+
+
+
+@keyframes blind{
+	0%{
+		visibility: visible;	
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.5);
+	}
+	100%{
+		transform: scale(1);
+
+	}
+}
+
+@keyframes border{
+	0%{
+		
+		opacity: 0;
+	}
+	50%{
+
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+
+	}
+}
